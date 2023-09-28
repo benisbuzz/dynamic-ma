@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "dynamic-ma"
+version = "0.1.0"
+description = ""
+authors = ["benisbuzz <ben@danziger.uk>"]
+readme = "README.md"
+packages = [{include = "dynamic_ma"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+python-dotenv = "^1.0.0"
+yfinance = "^0.2.30"
+pandas = "^2.1.1"
+matplotlib = "^3.8.0"
+numpy = "^1.26.0"
+pandas-ta = "^0.3.14b0"
+TA-Lib = "^0.4.28"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.25.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
